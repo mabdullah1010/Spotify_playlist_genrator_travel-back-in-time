@@ -54,7 +54,6 @@ add_song = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_secret=os.environ["CLIENT_SECRET"],
     redirect_uri='https://developer.spotify.com/dashboard',
 ))
-
 added = add_song.playlist_add_items(playlist_id=playlist_id, items=song_urls[0: 10])
 print(added)
 c = input("press any key to exit")
