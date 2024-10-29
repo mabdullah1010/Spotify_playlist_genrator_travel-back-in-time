@@ -7,8 +7,6 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 user_reply = input("Which date do you want to travel to? Type date in this format YYYY-MM-DD : ")
 URL = "https://www.billboard.com/charts/hot-100/" + user_reply
-
-
 response = requests.get(URL)
 soup = BeautifulSoup(response.content, 'html.parser')
 
